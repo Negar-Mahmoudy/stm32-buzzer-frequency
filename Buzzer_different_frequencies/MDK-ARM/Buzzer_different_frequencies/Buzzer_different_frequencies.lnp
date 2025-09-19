@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"buzzer_different_frequencies\startup_stm32f103xb.o"
+"buzzer_different_frequencies\main.o"
+"buzzer_different_frequencies\stm32f1xx_it.o"
+"buzzer_different_frequencies\stm32f1xx_hal_msp.o"
+"buzzer_different_frequencies\stm32f1xx_hal_gpio_ex.o"
+"buzzer_different_frequencies\stm32f1xx_hal_tim.o"
+"buzzer_different_frequencies\stm32f1xx_hal_tim_ex.o"
+"buzzer_different_frequencies\stm32f1xx_hal.o"
+"buzzer_different_frequencies\stm32f1xx_hal_rcc.o"
+"buzzer_different_frequencies\stm32f1xx_hal_rcc_ex.o"
+"buzzer_different_frequencies\stm32f1xx_hal_gpio.o"
+"buzzer_different_frequencies\stm32f1xx_hal_dma.o"
+"buzzer_different_frequencies\stm32f1xx_hal_cortex.o"
+"buzzer_different_frequencies\stm32f1xx_hal_pwr.o"
+"buzzer_different_frequencies\stm32f1xx_hal_flash.o"
+"buzzer_different_frequencies\stm32f1xx_hal_flash_ex.o"
+"buzzer_different_frequencies\stm32f1xx_hal_exti.o"
+"buzzer_different_frequencies\system_stm32f1xx.o"
+--strict --scatter "Buzzer_different_frequencies\Buzzer_different_frequencies.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Buzzer_different_frequencies.map" -o Buzzer_different_frequencies\Buzzer_different_frequencies.axf
